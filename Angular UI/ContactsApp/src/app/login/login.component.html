@@ -1,0 +1,16 @@
+<div class="container text-center" >
+    <h2>Welcome to Contacts App</h2>
+    <small class="text-danger">{{msg}}</small>
+    <div class="form-group">
+        <label for="id">Id:</label>
+        <input type="number" class="form-control" placeholder="Enter id" name="id" (keyup)="getUserId($event.target.value)">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" name="password" (keyup)="getUserPassword($event.target.value)">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <div><button (click)="getHome()" class="btn btn-info">Login</button></div>
+</div>
